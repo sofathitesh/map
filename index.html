@@ -8,7 +8,8 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height: 512px;
+        width: 1050px;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -19,14 +20,15 @@
     </style>
   </head>
   <body>
+  <button style="float: right;position: absolute;z-index: 2;width: 100px;height: 40px;" onclick="prints()">Print</button>
     <div id="map"></div>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS2mgqhJVRk7yIyAx1mZur6sQlewXalgs">
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyDS2mgqhJVRk7yIyAx1mZur6sQlewXalgs">
     </script>
     <script src="map.js"></script>
 <script type="text/javascript">
   
-  draw_map(28.6506792,77.2312534,28.6406214,77.2473115);
+  draw_map(49.229005,-121.440811,49.248731,-121.343307); //PASS THE COPRDINATES HERE
 
 </script>
   </body>
